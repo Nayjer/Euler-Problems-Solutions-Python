@@ -1,0 +1,11 @@
+"""
+Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+How many such routes are there through a 20×20 grid?
+"""
+
+How we can notice is, that we need to go 20 to the right and 20 down to reach the rightest and downest corner. 
+So we have a string of 40 characters and each 20 times R and D. E.g. RDDRRD...
+
+So we need to find these permutations. That is just the binomical coefficent with n = 40 and k = 20. Why?
+We can imagine R1 to R40, which means and the for example 4th act we go to the right. If we have set all our Rs we know of course our Ds.
+So thats the solution: 40 over 20 is 137846528820.
