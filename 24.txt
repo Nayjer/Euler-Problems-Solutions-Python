@@ -1,0 +1,12 @@
+Instead of the simple approach this idea gots in my head and it makes the problem much more simple.
+
+9! * 2 = 725 760 -> first digit = 2 (means 0XXXXXXXXX and 1XXXXXXXXX cant be in range of the millionths number, so 2XXXXXXXXX is)
+725 760 + 6*8! = 967 680 -> second digit = 7 (means 27XXXXXXXX is in range, because we choose of 013456789)
+967 680 + 6*7! = 997 920 -> third digit = 8 (278XXXXXXX, we choose of 01345689)
+997 920 + 2*6! = 999 360 -> fourth digit = 3 (2783XXXXXX, 0134569)
+999 360 + 5*5! = 999 960 -> fifth digit = 9 (27839XXXXX, 014569)
+999 960 + 1*4! = 999 984 -> sixth digit = 1 (278391XXXX, 01456)
+999 984 + 2*3! = 999 996 -> seventh digit = 5 (2783915XXX, 0456)
+999 996 + 1*2! = 999 998 -> eight digit = 4 (27839154XX, 046)
+999 998 + 1*1! = 999 999 -> ninth digit = 9 (278391549X, 06)
+number = 2783915460
